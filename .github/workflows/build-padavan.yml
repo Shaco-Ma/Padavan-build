@@ -33,9 +33,9 @@ jobs:
     - name: Clone source code
       run: |
         cd /opt
-        curl -o rt-n56u.zip https://codeload.github.com/chongshengB/rt-n56u/zip/bfb0fd380176d0ac20e2e1d22e11b51ce0464eb5
+        curl -o rt-n56u.zip https://github.com/chongshengB/rt-n56u/archive/958c9b19a17ebb8a040a974542b2f2e21dc1f76e.zip
         unzip rt-n56u.zip > /dev/null 2>&1
-        mv rt-n56u-bfb0fd380176d0ac20e2e1d22e11b51ce0464eb5 rt-n56u
+        mv rt-n56u-958c9b19a17ebb8a040a974542b2f2e21dc1f76e rt-n56u
         cd /opt/rt-n56u/toolchain-mipsel
         sh dl_toolchain.sh
         mkdir -p /opt/images/
