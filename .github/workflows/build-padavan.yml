@@ -32,7 +32,6 @@ jobs:
         pkg-config zlib1g-dev libgmp3-dev libmpc-dev libmpfr-dev libncurses5-dev libltdl-dev wget
     - name: Clone source code
       run: |
-        #git clone --depth=1 https://github.com/chongshengB/rt-n56u /opt/rt-n56u
         curl -o /opt https://codeload.github.com/chongshengB/rt-n56u/zip/958c9b19a17ebb8a040a974542b2f2e21dc1f76e
         mv rt-n56u* rt-n56u.zip
         unzip rt-n56u.zip
