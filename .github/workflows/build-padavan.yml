@@ -34,7 +34,7 @@ jobs:
       run: |
         cd /opt
         curl -o rt-n56u.zip https://codeload.github.com/chongshengB/rt-n56u/zip/bfb0fd380176d0ac20e2e1d22e11b51ce0464eb5
-        unzip rt-n56u.zip
+        unzip rt-n56u.zip > /dev/null 2>&1
         mv rt-n56u-bfb0fd380176d0ac20e2e1d22e11b51ce0464eb5 rt-n56u
         cd /opt/rt-n56u/toolchain-mipsel
         sh dl_toolchain.sh
